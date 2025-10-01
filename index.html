@@ -74,6 +74,34 @@
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    table th, table td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+    table th {
+      background: #006400;
+      color: white;
+    }
+    .book-btn {
+      background: #ffb400;
+      color: #000;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .book-btn:hover {
+      background: #e0a200;
+    }
     form {
       background: white;
       padding: 20px;
@@ -110,7 +138,27 @@
       padding: 1rem;
       margin-top: 20px;
     }
+    /* WhatsApp button */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px #999;
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
   </style>
+  <!-- Font Awesome for WhatsApp icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
@@ -119,6 +167,7 @@
     <p>Where fast meets you</p>
     <nav>
       <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
       <a href="#gallery">Gallery</a>
       <a href="#reviews">Reviews</a>
       <a href="#about">About</a>
@@ -136,6 +185,48 @@
       <li><strong>Cleaning & Laundry</strong> – Domestic cleaning, laundry services</li>
       <li><strong>Specialized Tasks</strong> – Custom jobs on request</li>
     </ul>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <table>
+      <tr>
+        <th>Service</th>
+        <th>Starting Price</th>
+        <th>Notes</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Home & Property</td>
+        <td>From $3,000 JMD</td>
+        <td>Yard work, handyman jobs</td>
+        <td><button class="book-btn" onclick="selectService('Home & Property Services')">Book Now</button></td>
+      </tr>
+      <tr>
+        <td>Errands & Shopping</td>
+        <td>From $1,500 JMD</td>
+        <td>Islandwide delivery</td>
+        <td><button class="book-btn" onclick="selectService('Errands & Shopping')">Book Now</button></td>
+      </tr>
+      <tr>
+        <td>Cleaning & Laundry</td>
+        <td>From $2,500 JMD</td>
+        <td>Domestic & deep cleaning</td>
+        <td><button class="book-btn" onclick="selectService('Cleaning & Laundry')">Book Now</button></td>
+      </tr>
+      <tr>
+        <td>Personal & Lifestyle</td>
+        <td>From $2,000 JMD</td>
+        <td>Daily assistance & support</td>
+        <td><button class="book-btn" onclick="selectService('Personal & Lifestyle')">Book Now</button></td>
+      </tr>
+      <tr>
+        <td>Specialized Tasks</td>
+        <td>Quote</td>
+        <td>Custom jobs on request</td>
+        <td><button class="book-btn" onclick="selectService('Specialized Tasks')">Book Now</button></td>
+      </tr>
+    </table>
   </section>
 
   <section id="gallery" class="gallery">
@@ -175,7 +266,7 @@
 
       <label>
         Service Needed:
-        <select name="service" required>
+        <select name="service" id="serviceSelect" required>
           <option value="">-- Select a Service --</option>
           <option value="Home & Property Services">Home & Property Services</option>
           <option value="Errands & Shopping">Errands & Shopping</option>
@@ -203,6 +294,19 @@
   <footer>
     <p>&copy; 2025 876Your-Empire. All rights reserved.</p>
   </footer>
+
+  <!-- WhatsApp Chat Button -->
+  <a href="https://wa.me/18768032970?text=Hi%20I%20would%20like%20to%20book%20a%20service%20from%20876Your-Empire" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script>
+    // Auto-select service when "Book Now" clicked
+    function selectService(service) {
+      document.getElementById("serviceSelect").value = service;
+      location.href = "#booking";
+    }
+  </script>
 
 </body>
 </html>

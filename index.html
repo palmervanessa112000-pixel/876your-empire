@@ -76,7 +76,7 @@
       margin-bottom: 10px;
       font-weight: bold;
     }
-    input, textarea, button {
+    input, textarea, select, button {
       width: 100%;
       padding: 10px;
       margin-top: 5px;
@@ -166,12 +166,19 @@
 
       <label>
         Service Needed:
-        <input type="text" name="service" placeholder="e.g. Cleaning, Delivery" required>
+        <select name="service" required>
+          <option value="">-- Select a Service --</option>
+          <option value="Home & Property Services">Home & Property Services</option>
+          <option value="Errands & Shopping">Errands & Shopping</option>
+          <option value="Personal & Lifestyle">Personal & Lifestyle</option>
+          <option value="Cleaning & Laundry">Cleaning & Laundry</option>
+          <option value="Specialized Tasks">Specialized Tasks</option>
+        </select>
       </label>
 
       <label>
-        Booking Details:
-        <textarea name="message" required></textarea>
+        Booking Details (Optional):
+        <textarea name="message" placeholder="Extra notes if needed..."></textarea>
       </label>
 
       <button type="submit">Send Booking</button>

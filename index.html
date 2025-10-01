@@ -5,74 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>876Your-Empire - Where Fast Meets You</title>
   <meta name="description" content="876Your-Empire offers fast delivery, errands, cleaning, and lifestyle services across Jamaica. Where fast meets you.">
+  <meta name="keywords" content="876Your-Empire, delivery Jamaica, cleaning Jamaica, errands, lifestyle services, fast delivery">
+  <meta name="google-site-verification" content="tZSfIfo020-Zob-ZkbkYLuJ_qW7V_fscoACaC8iSq-4" />
   <style>
-    :root {
-      --green: #008000;
-      --darkgreen: #006400;
-      --light: #f4f4f4;
-      --white: #fff;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; background: var(--light); color: #333; }
-    header { background: var(--green); color: var(--white); padding: 20px; position: sticky; top: 0; z-index: 1000; }
-    header h1 { font-size: 2rem; text-align: center; }
-    header p { text-align: center; margin-top: 5px; }
-    /* Navigation */
-    nav { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 15px; }
-    nav a { margin: 5px 10px; text-decoration: none; color: var(--white); font-weight: bold; transition: color 0.3s; }
-    nav a:hover { color: #ffd700; }
-    /* Mobile menu button */
-    .menu-toggle { display: none; cursor: pointer; font-size: 1.8rem; position: absolute; top: 20px; right: 20px; }
-    /* Sections */
-    main { max-width: 1100px; margin: auto; padding: 20px; }
-    section { padding: 20px; background: var(--white); margin: 20px 0; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); transition: transform 0.2s; }
-    section:hover { transform: translateY(-3px); }
-    h2 { color: var(--green); margin-bottom: 15px; }
-    ul { list-style: disc; padding-left: 20px; }
-    /* Pricing Table */
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; background: #f4f4f4; }
+    header { background: #008000; color: #fff; padding: 20px; text-align: center; }
+    nav { margin: 10px 0; }
+    nav a { margin: 0 15px; text-decoration: none; color: #fff; font-weight: bold; }
+    section { padding: 20px; background: #fff; margin: 10px; border-radius: 8px; }
+    h1, h2 { color: #008000; }
+    form { display: flex; flex-direction: column; }
+    label { margin: 10px 0 5px; }
+    input, textarea, select, button { padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #008000; color: #fff; border: none; cursor: pointer; }
+    button:hover { background: #006400; }
+    footer { text-align: center; padding: 15px; background: #008000; color: #fff; margin-top: 20px; }
     .pricing-table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-    .pricing-table th, .pricing-table td { border: 1px solid #ccc; padding: 12px; text-align: center; }
-    .pricing-table th { background: var(--green); color: var(--white); }
-    /* Form */
-    form { display: grid; gap: 15px; }
-    input, textarea, button { padding: 12px; border: 1px solid #ccc; border-radius: 5px; width: 100%; }
-    button { background: var(--green); color: var(--white); border: none; cursor: pointer; transition: background 0.3s; }
-    button:hover { background: var(--darkgreen); }
-    fieldset { border: 1px solid #ccc; border-radius: 5px; padding: 10px; }
-    legend { font-weight: bold; color: var(--green); }
-    /* Reviews */
-    .reviews { display: grid; gap: 15px; }
-    .review { background: #f9fff9; padding: 15px; border-left: 4px solid var(--green); border-radius: 5px; }
-    /* Gallery */
-    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-    .gallery-grid div { background: #eee; border-radius: 8px; height: 150px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: #666; }
-    /* Footer */
-    footer { text-align: center; padding: 15px; background: var(--green); color: var(--white); margin-top: 20px; }
-    /* WhatsApp Button */
-    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background: #25D366; color: #fff; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 30px; box-shadow: 2px 2px 6px #999; z-index: 100; text-decoration: none; transition: transform 0.2s; }
-    .whatsapp-float:hover { transform: scale(1.1); }
-    /* Responsive Navigation */
-    @media (max-width: 768px) {
-      nav { 
-        display: none; 
-        flex-direction: column; 
-        align-items: center; 
-        background: var(--green); 
-        padding: 10px; 
-      }
-      nav.active { display: flex; }
-      .menu-toggle { display: block; color: var(--white); }
-    }
+    .pricing-table th, .pricing-table td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    .pricing-table th { background: #008000; color: #fff; }
+    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background: #25D366; color: #fff; border-radius: 50%; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; text-decoration: none; }
+    .whatsapp-float i { margin-top: 15px; }
+    .qr-container { text-align: center; margin-top: 15px; }
+    .qr-container img { margin-top: 10px; border: 1px solid #ccc; padding: 5px; background: #fff; }
   </style>
 </head>
 <body>
   <header>
     <h1>876Your-Empire</h1>
     <p>Where Fast Meets You</p>
-    <!-- Hamburger button -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    <nav id="navMenu">
+    <nav>
       <a href="#services">Services</a>
+      <a href="#specials">Specials</a>
       <a href="#pricing">Pricing</a>
       <a href="#booking">Booking</a>
       <a href="#gallery">Gallery</a>
@@ -82,140 +45,190 @@
     </nav>
   </header>
 
-  <main>
-    <!-- Services -->
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Home & Property Services</li>
-        <li>Errands & Shopping</li>
-        <li>Personal & Lifestyle</li>
-        <li>Cleaning & Laundry</li>
-        <li>Specialized Tasks</li>
-      </ul>
-    </section>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Home & Property Services</li>
+      <li>Errands & Shopping</li>
+      <li>Personal & Lifestyle</li>
+      <li>Cleaning & Laundry</li>
+      <li>Specialized Tasks</li>
+    </ul>
+  </section>
 
-    <!-- Pricing -->
-    <section id="pricing">
-      <h2>Pricing</h2>
-      <table class="pricing-table">
-        <tr><th>Service</th><th>Starting Price (JMD)</th><th>Notes</th></tr>
-        <tr><td>Home & Property</td><td>$3,000</td><td>Yard work, handyman jobs</td></tr>
-        <tr><td>Errands & Shopping</td><td>$1,500</td><td>Islandwide delivery</td></tr>
-        <tr><td>Cleaning & Laundry</td><td>$2,500</td><td>Domestic & deep cleaning</td></tr>
-        <tr><td>Personal & Lifestyle</td><td>$2,000</td><td>Day-to-day assistance</td></tr>
-        <tr><td>Specialized Tasks</td><td>Quote</td><td>Custom jobs available</td></tr>
-      </table>
-    </section>
+  <!-- Special Offers Section -->
+  <section id="specials">
+    <h2>Special Offers (Limited Time)</h2>
+    <div style="background:#fdfdfd; padding:20px; border-radius:8px; border:1px solid #ccc;">
+      
+      <h3>🎉 First-Time Customer Discount</h3>
+      <p>Book <strong>2 or more services</strong> as a first-time customer and enjoy a 
+         <strong>5% discount</strong>. 
+         <em>Offer valid for a limited time only.</em></p>
 
-    <!-- Booking -->
-    <section id="booking">
-      <h2>Book a Service</h2>
-      <form id="bookingForm" action="https://formspree.io/f/xeorgwrd" method="POST">
-        <input type="text" name="name" id="name" placeholder="Your Name" required>
-        <input type="email" name="email" id="email" placeholder="Your Email" required>
-        <input type="tel" name="phone" id="phone" placeholder="Your Phone">
-        <fieldset>
-          <legend>Services Needed</legend>
-          <label><input type="checkbox" name="services[]" value="Home & Property Services"> Home & Property</label><br>
-          <label><input type="checkbox" name="services[]" value="Errands & Shopping"> Errands & Shopping</label><br>
-          <label><input type="checkbox" name="services[]" value="Personal & Lifestyle"> Personal & Lifestyle</label><br>
-          <label><input type="checkbox" name="services[]" value="Cleaning & Laundry"> Cleaning & Laundry</label><br>
-          <label><input type="checkbox" name="services[]" value="Specialized Tasks"> Specialized Tasks</label>
-        </fieldset>
+      <h3>🚚 Free Delivery</h3>
+      <p>Get <strong>FREE delivery</strong> on all orders over <strong>$30,000 JMD</strong> islandwide. 
+         <em>Offer valid for a limited time only.</em></p>
+
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <table class="pricing-table">
+      <tr>
+        <th>Service</th>
+        <th>Starting Price (JMD)</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td>Home & Property</td>
+        <td>$3,000</td>
+        <td>Yard work, handyman jobs</td>
+      </tr>
+      <tr>
+        <td>Errands & Shopping</td>
+        <td>$1,500</td>
+        <td>Islandwide delivery</td>
+      </tr>
+      <tr>
+        <td>Cleaning & Laundry</td>
+        <td>$2,500</td>
+        <td>Domestic & deep cleaning</td>
+      </tr>
+      <tr>
+        <td>Personal & Lifestyle</td>
+        <td>$2,000</td>
+        <td>Day-to-day assistance</td>
+      </tr>
+      <tr>
+        <td>Specialized Tasks</td>
+        <td>Quote</td>
+        <td>Custom jobs available</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form id="bookingForm" action="https://formspree.io/f/xeorgwrd" method="POST">
+      <label>
+        Name:
+        <input type="text" name="name" id="name" required>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" id="email" required>
+      </label>
+
+      <label>
+        Phone:
+        <input type="tel" name="phone" id="phone">
+      </label>
+
+      <fieldset>
+        <legend><strong>Services Needed (Choose one or more):</strong></legend>
+        <label><input type="checkbox" name="services[]" value="Home & Property Services"> Home & Property Services</label><br>
+        <label><input type="checkbox" name="services[]" value="Errands & Shopping"> Errands & Shopping</label><br>
+        <label><input type="checkbox" name="services[]" value="Personal & Lifestyle"> Personal & Lifestyle</label><br>
+        <label><input type="checkbox" name="services[]" value="Cleaning & Laundry"> Cleaning & Laundry</label><br>
+        <label><input type="checkbox" name="services[]" value="Specialized Tasks"> Specialized Tasks</label>
+      </fieldset>
+
+      <!-- NEW: Special Offers inside Booking -->
+      <fieldset>
+        <legend><strong>Special Offers</strong></legend>
+        <label><input type="checkbox" name="offers[]" value="First-Time Customer 5% Off (2+ Services)"> 🎉 First-Time Customer 5% Off (2+ Services)</label><br>
+        <label><input type="checkbox" name="offers[]" value="Free Delivery Over $30,000 JMD"> 🚚 Free Delivery Over $30,000 JMD</label>
+      </fieldset>
+
+      <label>
+        Booking Details (Optional):
         <textarea name="message" id="message" placeholder="Extra notes if needed..."></textarea>
-        <button type="submit">Send Booking via Email</button>
-        <button type="button" onclick="sendToWhatsApp()">Book via WhatsApp</button>
-      </form>
-    </section>
+      </label>
 
-    <!-- Gallery -->
-    <section id="gallery">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <div>Image Coming Soon</div>
-        <div>Image Coming Soon</div>
-        <div>Image Coming Soon</div>
-      </div>
-    </section>
+      <button type="submit">Send Booking via Email</button>
+      <button type="button" onclick="sendToWhatsApp()">Book via WhatsApp</button>
+    </form>
+  </section>
 
-    <!-- Reviews -->
-    <section id="reviews">
-      <h2>Reviews</h2>
-      <div class="reviews">
-        <div class="review">⭐⭐⭐⭐⭐ "Fast and reliable! Highly recommend."</div>
-        <div class="review">⭐⭐⭐⭐ "Great service and very professional."</div>
-      </div>
-    </section>
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <p>Images coming soon...</p>
+  </section>
 
-    <!-- About -->
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Life too busy fi handle everything? We got you. We're your go-to team for all the tasks you don't have time for – or just don't feel like doing.</p>
-      <p>Whether it's yard work, errands, cleaning, or any odd job, we handle it quick and professional. Reliable, efficient, and always ready to help – where fast meets you.</p>
-      <p><strong>Email:</strong> <a href="mailto:yourempire876@gmail.com">yourempire876@gmail.com</a></p>
-      <p><strong>Phone:</strong> +1 (876) 803-2970</p>
-    </section>
+  <section id="reviews">
+    <h2>Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ "Fast and reliable! Highly recommend."</p>
+    <p>⭐⭐⭐⭐ "Great service and very professional."</p>
+  </section>
 
-    <!-- QR Code -->
-    <section id="qr">
-      <h2>Scan & Share Our Website</h2>
-      <div style="text-align:center;">
-        <p>Use this QR code to quickly visit 876Your-Empire:</p>
-        <img id="qrCode" src="" alt="QR Code to 876Your-Empire" style="margin-top:10px; border:1px solid #ccc; padding:5px; background:#fff;">
-        <br><br>
-        <button onclick="downloadQR()">Download QR Code</button>
-      </div>
-    </section>
-  </main>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Life too busy fi handle everything? We got you. We're your go-to team for all the tasks you don't have time for – or just don't feel like doing. 
+      Whether it's yard work, errands, cleaning, or any odd job, we handle it quick and professional. 
+      Reliable, efficient, and always ready to help – where fast meets you.
+    </p>
+    <p>Email: <a href="mailto:yourempire876@gmail.com">yourempire876@gmail.com</a></p>
+    <p>Phone: +1 (876) 803-2970</p>
+  </section>
+
+  <section id="qr">
+    <h2>Scan & Share Our Website</h2>
+    <div class="qr-container">
+      <p>Use this QR code to quickly visit 876Your-Empire:</p>
+      <img id="qrCode" src="" alt="QR Code to 876Your-Empire">
+      <br>
+      <button onclick="downloadQR()">Download QR Code</button>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 876Your-Empire. All Rights Reserved.</p>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/18768032970" class="whatsapp-float" target="_blank">💬</a>
+  <!-- Floating WhatsApp Contact Button -->
+  <a href="https://wa.me/18768032970" class="whatsapp-float" target="_blank">
+    💬
+  </a>
 
   <script>
-    // Toggle Mobile Menu
-    function toggleMenu() {
-      document.getElementById("navMenu").classList.toggle("active");
-    }
-
-    // WhatsApp Booking
     function sendToWhatsApp() {
       let name = document.getElementById("name").value;
       let phone = document.getElementById("phone").value;
       let services = [];
       document.querySelectorAll('input[name="services[]"]:checked').forEach(el => services.push(el.value));
+      let offers = [];
+      document.querySelectorAll('input[name="offers[]"]:checked').forEach(el => offers.push(el.value));
       let message = document.getElementById("message").value;
-      let today = new Date().toLocaleString();
 
-      if (services.length === 0) {
-        alert("Please select at least one service.");
-        return;
-      }
-
-      let text = `Booking request on ${today}%0AHi, I am ${name}.%0A` +
+      let text = `Hi, I am ${name}.%0A` +
                  (phone ? `Phone: ${phone}%0A` : "") +
                  `I would like to book the following services:%0A- ${services.join("%0A- ")}%0A` +
-                 (message ? `%0AExtra details: ${message}` : "");
+                 (offers.length ? `%0AClaiming Offers:%0A- ${offers.join("%0A- ")}` : "") +
+                 (message ? `%0A%0AExtra details: ${message}` : "");
 
       let url = `https://wa.me/18768032970?text=${text}`;
       window.open(url, "_blank");
     }
 
-    // QR Code
+    // Auto-generate QR Code for the site
     window.onload = function() {
       let siteURL = window.location.href;
       let qrImg = document.getElementById("qrCode");
       qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(siteURL)}`;
+      qrImg.setAttribute("data-url", qrImg.src);
     }
 
+    // Download QR Code function
     function downloadQR() {
       let qrImg = document.getElementById("qrCode");
+      let qrURL = qrImg.src;
+
       let a = document.createElement("a");
-      a.href = qrImg.src;
+      a.href = qrURL;
       a.download = "876YourEmpire-QR.png";
       document.body.appendChild(a);
       a.click();

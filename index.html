@@ -7,9 +7,202 @@
 
   <!-- SEO meta tags -->
   <meta name="description" content="876Your-Empire offers fast delivery, domestic cleaning, errands, and more across Jamaica. Reliable, affordable, and professional.">
-  <meta name="keywords" content="876Your-Empire, Jamaica delivery service, cleaning Jamaica, errands Jamaica, lifestyle help Jamaica">
+  <meta name="keywords" content="876Your-Empire, Jamaica delivery service, cleaning Jamaica, errands Jamaica, lifestyle help Jamaica, Jamaican business">
   <meta name="author" content="876Your-Empire">
 
   <!-- Google site verification -->
   <meta name="google-site-verification" content="tZSfIfo020-Zob-ZkbkYLuJ_qW7V_fscoACaC8iSq-4" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #006400, #ffb400, #ff0000);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin: 0.2rem 0;
+      font-style: italic;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #006400;
+      margin-bottom: 1rem;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+    }
+    .services li {
+      background: white;
+      margin: 10px 0;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .gallery, .reviews {
+      text-align: center;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #006400;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    button:hover {
+      background: #004d00;
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+    }
+  </style>
 </head>
+<body>
+
+  <header>
+    <h1>876Your-Empire</h1>
+    <p>Where fast meets you</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#about">About</a>
+      <a href="#booking">Booking</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Home & Property Services</strong> – Yard work, handyman jobs, maintenance</li>
+      <li><strong>Errands & Shopping</strong> – Islandwide fast delivery, grocery shopping</li>
+      <li><strong>Personal & Lifestyle</strong> – Assistance with daily tasks, personal support</li>
+      <li><strong>Cleaning & Laundry</strong> – Domestic cleaning, laundry services</li>
+      <li><strong>Specialized Tasks</strong> – Custom jobs on request</li>
+    </ul>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <p>Images coming soon...</p>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+    <p>Reviews will be added soon.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Life too busy fi handle everything? We got you. We're your go-to team for all the tasks you don't have time for – or just don't feel like doing. Whether it's yard work, errands, cleaning, or any odd job, we handle it quick and professional. We know your time is valuable, so let us take care of the rest while you focus on what matters most. Reliable, efficient, and always ready to help – where fast meets you.
+    </p>
+  </section>
+
+  <section id="booking">
+    <h2>Book a Service</h2>
+    <form action="https://formspree.io/f/xeorgwrd" method="POST">
+      <label>
+        Name:
+        <input type="text" name="name" required>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" name="email" required>
+      </label>
+
+      <label>
+        Phone:
+        <input type="tel" name="phone">
+      </label>
+
+      <label>
+        Service Needed:
+        <select name="service" required>
+          <option value="">-- Select a Service --</option>
+          <option value="Home & Property Services">Home & Property Services</option>
+          <option value="Errands & Shopping">Errands & Shopping</option>
+          <option value="Personal & Lifestyle">Personal & Lifestyle</option>
+          <option value="Cleaning & Laundry">Cleaning & Laundry</option>
+          <option value="Specialized Tasks">Specialized Tasks</option>
+        </select>
+      </label>
+
+      <label>
+        Booking Details (Optional):
+        <textarea name="message" placeholder="Extra notes if needed..."></textarea>
+      </label>
+
+      <button type="submit">Send Booking</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:yourempire876@gmail.com">yourempire876@gmail.com</a></p>
+    <p>Payments: Jamaican Local Bank (starting), Cash on Delivery, and coming soon – online payments.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 876Your-Empire. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
